@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.hero_atc span {
+  position: relative;
+  overflow: hidden;
+  transition:  0.5s  cubic-bezier(0.5, 1, 0.89, 1); /* Corrected the syntax */
+
+}
+.hero_atc:hover span{
+  animation-name:  animeIconParent;
+  animation-duration: 0.5s;
+  margin-left: 10px;
+
+  transition:  0.5s  cubic-bezier(0.5, 1, 0.89, 1); /* Corrected the syntax */
+}
+@keyframes animeIconParent {
+  0%{
+    margin-left: 0px;
+  }
+ 
+  100%{
+    margin-left: 10px;
+  }
+}
+.hero_atc span::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  left: 0;
+  top: 0;
+  background-color: black;
+  z-index: 1;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards; /* Add this line if you want the effect to persist after the animation */
+  transition: width 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6); /* Corrected the syntax */
+}
+
+.hero_atc span svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+}
+
+@keyframes animeAtc {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.hero_atc:hover span::after {
+  animation-name: animeAtc;
+}
+.hero_atc:hover span svg{
+  animation: animeIcon;
+   
+  animation-duration: 0.5s;
+  transition: width 0.5s  cubic-bezier(0.5, 1, 0.89, 1); /* Corrected the syntax */
+}
+.hero_atc:hover span svg path{
+  fill: white;
+
+  
+}
+@keyframes animeIcon {
+  0%{
+    transform: translateX(100%);
+  }
+  50%{
+      transform: translateX(-100%);
+
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+.background-video{
+  object-position: top;
+}
+.mega__Menu{
+  display:grid;
+  grid-template-columns: repeat(2, 14rem);
+  grid-template-rows: repeat(3, 1fr);
+  transition: 2s ease-in;
+  overflow: hidden;
+}
+.mega__Menu div:nth-child(1):hover {
+  background: linear-gradient(to right, #ffe5b4, #ffcc80); /* Light gradient 1 */
+}
+
+.mega__Menu div:nth-child(2):hover {
+  background: linear-gradient(to right, #d1c4e9, #b39ddb); /* Light gradient 2 */
+}
+
+.mega__Menu div:nth-child(3):hover {
+  background: linear-gradient(to right, #b2ebf2, #80deea); /* Light gradient 3 */
+}
+
+.mega__Menu div:nth-child(4):hover {
+  background: linear-gradient(to right, #ffccbc, #ffab91); /* Light gradient 4 */
+}
+.mega__Menu div:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+.mega__Menu div:nth-child(2) { grid-area: 1 / 2 / 3 / 3; }
+.mega__Menu div:nth-child(3) { grid-area: 2 / 1 / 3 / 2; }
+.mega__Menu div:nth-child(4) { grid-area: 3 / 1 / 4 / 3; }
+.sideanime{
+  animation-name: slideDown ;
+  transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  animation-duration: 0.6s;
+}
+@keyframes slideDown {
+  0%{
+    min-height: 0px;
+    height: 0px;
+  }
+  100%{
+    min-height: 21rem;
+  }
+}
+
+/*  */
+
+/* Custom Cursor Styles */
+.cursor {
+  background-color: #3C3D37;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  z-index: 111111;
+  left: 0;
+  pointer-events: none;
+}
+body{
+  cursor:none;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonialSwiper .swiper-wrapper{
+height: 70vh;
+}
+.mdshadow{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
