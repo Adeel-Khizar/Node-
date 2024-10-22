@@ -3,7 +3,10 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Portfolio from "@/components/Portfolio";
 import ProjectCount from "@/components/ProjectCount";
+import Solutions from "@/components/Solutions";
+import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
+import { CursorProvider } from "@/hooks/CursorContext";
 
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
@@ -43,8 +46,12 @@ const Home = () => {
       <div className="relative z-[111] mt-[100vh]"> {/* Ensure enough height to scroll */}
         <ProjectCount />
       </div>
-      <Portfolio/>
-       <Testimonials/>
+      <CursorProvider>
+      <Portfolio />
+      <Solutions />
+      <Testimonials/>
+      <Team/>
+    </CursorProvider>
     </div>
   )
 }

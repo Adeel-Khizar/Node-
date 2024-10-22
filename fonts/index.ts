@@ -1,21 +1,21 @@
-import { Unbounded } from 'next/font/google';
-import { Aclonica
+import { Francois_One } from 'next/font/google';
+import { Rufina
 } from 'next/font/google';
 
-const unbounded = Unbounded({
+const unbounded = Francois_One({
   subsets: ['latin'],
   weight: '400',
   variable: '--passionOne',
 });
 
  
-const acme = Aclonica
+const acme = Rufina
 ({
   subsets: ['latin'],
   weight: '400',
   variable: '--passionOne',
 });
 
-export const Acmee  =  acme.className;
+export const SedaN  =  acme.className;
  
-export const Unbound  =  unbounded.className;
+export const Rancher  =  unbounded.className;

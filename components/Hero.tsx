@@ -1,6 +1,6 @@
 "use client"
 
-import { Unbound } from '@/fonts'
+import { Rancher, SedaN } from '@/fonts'
 import Link from 'next/link'
 import React, { useEffect, useRef } from 'react'
 import { GlobeDemo } from './Globe'
@@ -53,14 +53,14 @@ const Hero = () => {
           />
           
   <h1 style={{
-                 lineHeight: '150%'
-            }} className={`text-black text-[8vw] md:text-[4.1vw] ${Unbound} `}>Empowering the Unicorns of tomorrow</h1>
-            <p className='text-black text-[1rem] md:text-[1.5rem]'>A subscription agency focused on revamping websites for next-gen digital business with no-code solutions</p>
+                 lineHeight: '100%'
+            }} className={`text-black text-[8vw] mb-5 lg:mb-10 md:text-[4.1vw] ${Rancher} `}>Empowering the Unicorns of tomorrow</h1>
+            <p className={`text-black text-[1rem] md:text-[1.5rem] ${SedaN} `}>A subscription agency focused on revamping websites for next-gen digital business with no-code solutions</p>
           </div>
           
               <div className='hero_atc flex'>
               
-              <Link className='flex transition-all ease-in-out bg-black px-[2rem] py-[.7rem] max-h-[3rem] h-[3rem] text-white rounded-full items-center justify-center' href='/'> View our portfolio </Link> 
+              <Link className={` flex transition-all ease-in-out bg-black px-[2rem] py-[.7rem] max-h-[3rem] h-[3rem] text-white rounded-full items-center justify-center ${SedaN} `} href='/'> View our portfolio </Link> 
               <span className='w-[3rem] h-[3rem] flex  rounded-full items-center justify-center border-2 border-black'>
               <svg className='h-[2rem] w-[1.25rem]' width="100%" height="100%" viewBox="0 0 24 25" fill="#fffff">
 

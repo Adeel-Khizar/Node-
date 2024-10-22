@@ -7,10 +7,10 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "YOOM",
-  description: "Video calling App",
+  title: "Node",
+  description: "Software Agency",
   icons: {
-    icon: "/icons/logo.svg",
+    icon: "/favicon.png",
   },
 };
 
