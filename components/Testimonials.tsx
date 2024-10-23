@@ -41,7 +41,7 @@ const Testimonials = () => {
         {clientReviews.map((reviews, index) => (
           <SwiperSlide key={index} className='flex flex-col gap-10   p-4 lg:p-16 bg-gray-900 rounded-3xl'>
             <div className='flex gap-20 flex-col'>
-              <h2 className={` ${SedaN} text-white text-start text-md lg:text-2xl tracking-wide		 `}>"{reviews.Review}"</h2>
+              <h2 className={` ${SedaN} text-white text-md text-center lg:text-xl tracking-wide		 `}>"{reviews.Review}"</h2>
               <div className='flex items-center justify-start gap-4'>
                 <div className='lg:h-[90px] lg:w-[90px] h-[50px] w-[50px] rounded-full overflow-hidden'>
                   <Image height={500} width={500} src={reviews.profileImage} alt={reviews.profileName} />

@@ -29,7 +29,7 @@ const Team: React.FC = () => {
         <h2 className={`text-3xl ${Rancher} text-center  text-black md:text-7xl pb-3`}>Our team of friends</h2>
         <p className={` text-md text-center md:text-xl text-black ${SedaN} `} >Each And Every One Is A Preasure To Work With</p>
       <div 
-        className='w-[100%] relative px-6 lg:pl-0  py-6 md:py-14 pr-0 lg:pr-14'
+        className='w-[100%] relative px-6 lg:pl-0  py-0 md:py-14 pr-0 lg:pr-14'
         onMouseEnter={() => setCursorText('SCROLL')}
         onMouseLeave={() => setCursorText('')}
       >

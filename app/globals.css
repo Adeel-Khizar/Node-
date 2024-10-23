@@ -273,3 +273,98 @@ body {
 .TeamS .swiper-scrollbar-drag{
   background: black !important;
 }
+
+
+.card {
+  box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
+ background-color: #fff;
+ border-radius: 8px;
+ font-weight: 500;
+ letter-spacing: 0.3px;
+ color: #475f7b;
+ overflow: hidden;
+}
+.rc-accordion-toggle {
+ display: flex;
+ align-items: flex-start;
+ cursor: pointer;
+ justify-content: space-between;
+ transition: 1s;
+}
+.rc-accordion-toggle.active{
+ background-color: white;
+}
+.rc-accordion-toggle.active .rc-accordion-icon{
+ transform: rotate(180deg);
+ color: #fff;
+}
+.rc-accordion-card{
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ overflow: hidden;
+}
+.rc-accordion-card:last-child{
+ margin-bottom: 0;
+}
+.rc-accordion-title{
+ font-weight: 500;
+ position: relative;
+ margin-bottom: 0;
+ color:white;
+ transition: 1s;
+}
+.rc-accordion-toggle.active .rc-accordion-title{
+ color: black;
+}
+.rc-accordion-icon{
+ position: relative;
+ top: 2px;
+ transition: 1s;
+}
+.rc-accordion-body{
+ flex: 1 1 auto;
+ min-height: 1px;
+ padding: 15px;
+}
+.rc-accordion-body p{
+ margin-bottom: 0;
+ font-weight: 400;
+ line-height: 24px;
+}
+.rc-collapse{
+ position: relative;
+ height: 0;
+ overflow: hidden;
+ transition: height 1s ease;
+}
+.rc-collapse.show{
+ height: auto;
+}
+
+.PreviousWork {
+  display: grid;
+  height: 90vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  }
+  
+  
+.PreviousWork div:nth-child(1) { grid-area: 1 / 1 / 4 / 2; }
+  
+.PreviousWork div:nth-child(2) { grid-area: 1 / 2 / 4 / 4; }
+  
+.PreviousWork div:nth-child(3) { grid-area: 4 / 1 / 8 / 3; }
+  
+.PreviousWork div:nth-child(4) { grid-area: 1 / 4 / 5 / 6; }
+  
+.PreviousWork div:nth-child(5) { grid-area: 4 / 3 / 8 / 4; }
+  
+.PreviousWork div:nth-child(6) { grid-area: 5 / 4 / 8 / 6; }
+
+.workHoverOverlay {
+  background: rgba(15, 12, 41, 0.7);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 36, 62, 0.7), rgba(48, 43, 99, 0.7), rgba(15, 12, 41, 0.7)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 36, 62, 0.7), rgba(48, 43, 99, 0.7), rgba(15, 12, 41, 0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

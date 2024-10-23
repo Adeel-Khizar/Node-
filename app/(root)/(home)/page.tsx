@@ -1,4 +1,6 @@
 "use client";
+import FAQS from "@/components/FAQS";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Portfolio from "@/components/Portfolio";
@@ -51,6 +53,8 @@ const Home = () => {
       <Solutions />
       <Testimonials/>
       <Team/>
+      <FAQS/>
+      <Footer/>
     </CursorProvider>
     </div>
   )
