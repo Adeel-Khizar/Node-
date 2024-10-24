@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Portfolio from "@/components/Portfolio";
 import ProjectCount from "@/components/ProjectCount";
+import Services from "@/components/Services";
 import Solutions from "@/components/Solutions";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
@@ -23,7 +24,7 @@ const Home = () => {
     });
   
     // Opacity transformation for the Hero component
-    const heroOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]); // Fades out from 1 to 0
+    const heroOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]); // Fades out from 1 to 0
   
     // Add smooth scroll behavior to the entire page
     useEffect(() => {
@@ -34,7 +35,6 @@ const Home = () => {
     }, []);
   return (
     <div>
-            <Header />
       <motion.div
         className="fixed top-0 left-0 right-0 h-screen z-10"
         style={{
@@ -52,9 +52,9 @@ const Home = () => {
       <Portfolio />
       <Solutions />
       <Testimonials/>
+      <Services/>
       <Team/>
       <FAQS/>
-      <Footer/>
     </CursorProvider>
     </div>
   )

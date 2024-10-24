@@ -4,24 +4,24 @@ import { Rancher, SedaN } from '@/fonts'
 import Link from 'next/link'
 import React, { useEffect, useRef } from 'react'
 import { GlobeDemo } from './Globe'
-import * as motion from "framer-motion/client";
-import { useAnimation, useInView } from 'framer-motion';
+// import * as motion from "framer-motion/client";
+// import { useAnimation, useInView } from 'framer-motion';
 const Hero = () => {
   
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const mainControls = useAnimation();
-  const blackSlideControls = useAnimation();
-  const whiteSlideControls = useAnimation();
+  // const ref = useRef(null);
+  // const isInView = useInView(ref, { once: true });
+  // const mainControls = useAnimation();
+  // const blackSlideControls = useAnimation();
+  // const whiteSlideControls = useAnimation();
 
-  // Trigger animations on scroll when in view
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-      blackSlideControls.start("visible");
-      whiteSlideControls.start("visible");
-    }
-  }, [isInView]);
+  // // Trigger animations on scroll when in view
+  // useEffect(() => {
+  //   if (isInView) {
+  //     mainControls.start("visible");
+  //     blackSlideControls.start("visible");
+  //     whiteSlideControls.start("visible");
+  //   }
+  // }, [isInView]);
 
   return (
  
@@ -31,9 +31,10 @@ const Hero = () => {
         <source src="./vecteezy_3d-animation-white-geometric-background-with-cubes_46549148.mp4" type="video/mp4" /> 
     </video>
         <div className='flex flex-col mt-[90px] font-light   gap-6 lg:gap-10 pt-[10vw] pl-[6vw]  lg:pl-[5vw] lg:pt-[5vw] w-full lg:max-w-[60%] '>
-          <div    ref={ref}
+          <div  
+            // ref={ref}
           style={{ position: "relative", overflow: "hidden" }} >
-          <motion.div
+          {/* <motion.div
             variants={{
               hidden: { left: 0 },
               visible: { left: "100%" },
@@ -50,7 +51,7 @@ const Hero = () => {
               background: "#000000",
               zIndex: 1,
             }}
-          />
+          /> */}
           
   <h1 style={{
                  lineHeight: '100%'

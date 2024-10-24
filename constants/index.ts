@@ -11,8 +11,8 @@ export const  Nav_links = [
       },
       {
         id: 3,
-        label: 'Portfolio',
-        url: '#portfolio'
+        label: 'Works',
+        url: '/work'
       },
       {
         id: 3,
@@ -252,6 +252,69 @@ export const previousWork = [
   },
   {
     id: 6,
+    Imgurl: "/s3.jpg",
+    title:'Netceed',
+    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    url: '/'
+  },
+  {
+    id: 7,
+    Imgurl: "/s3.jpg",
+    title:'Netceed',
+    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    url: '/'
+  },
+  {
+    id: 8,
+    Imgurl: "/s3.jpg",
+    title:'Netceed',
+    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    url: '/'
+  },
+  {
+    id: 9,
+    Imgurl: "/s3.jpg",
+    title:'Netceed',
+    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    url: '/'
+  },
+  {
+    id: 10,
+    Imgurl: "/s3.jpg",
+    title:'Netceed',
+    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    url: '/'
+  },
+  {
+    id: 11,
+    Imgurl: "/s3.jpg",
+    title:'Netceed',
+    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    url: '/'
+  },
+  {
+    id: 12,
+    Imgurl: "/s3.jpg",
+    title:'Netceed',
+    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    url: '/'
+  },
+  {
+    id: 13,
+    Imgurl: "/s3.jpg",
+    title:'Netceed',
+    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    url: '/'
+  },
+  {
+    id: 14,
+    Imgurl: "/s3.jpg",
+    title:'Netceed',
+    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    url: '/'
+  },
+  {
+    id: 15,
     Imgurl: "/s3.jpg",
     title:'Netceed',
     description: "Design, Development, Integrations, Marketing, BigCommerce",

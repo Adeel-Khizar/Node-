@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='px-[5vw] pt-[40px]'>
+    <div className='px-[5vw] pt-[60px]'>
         <div className='flex lg:flex-row flex-col items-center pb-5'>
         <div className='lg:w-[40%] w-full '>
             <h5 className={` text-md text-gray-500 pb-8 ${Rancher} `}>Work</h5>

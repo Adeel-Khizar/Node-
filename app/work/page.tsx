@@ -1,3 +1,4 @@
+"use client"
 import Testimonials from '@/components/Testimonials'
 import Banner from '@/components/work/Banner'
 import { PorjectCards } from '@/components/work/ProjectCard'
@@ -9,6 +10,7 @@ const work = () => {
     <div>
       <Banner/>    
       <PorjectCards/>   
+      <Testimonials/>
     </div>
   )
 }
