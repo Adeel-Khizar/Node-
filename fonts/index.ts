@@ -1,5 +1,5 @@
 import { Francois_One } from 'next/font/google';
-import { Rufina
+import { Quicksand
 } from 'next/font/google';
 
 const unbounded = Francois_One({
@@ -9,7 +9,7 @@ const unbounded = Francois_One({
 });
 
  
-const acme = Rufina
+const acme = Quicksand
 ({
   subsets: ['latin'],
   weight: '400',

@@ -80,13 +80,19 @@ const Portfolio: React.FC = () => {
               onMouseLeave={() => setCursorText('')}
             >
               <div>
-                <Image
-                  className="w-full h-auto"
-                  src={item.projectImage}
-                  alt={item.projectTitle}
-                  width={2000}
-                  height={2000}
-                />
+             
+                 <video
+                 style={{
+                  pointerEvents: 'none'
+                 }}
+        controls
+       
+        autoPlay
+        loop
+        muted
+      >
+        <source src={item.projectImage} type="video/webm" />
+      </video>
               </div>
               <div className="flex bg-[#1f1d1c] justify-between">
                 <div className='p-3'>

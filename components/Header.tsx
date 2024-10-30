@@ -51,7 +51,7 @@ const Header = () => {
                 ))}
             </div>
             <div className={menu ? `hero_atc flex` : ` hero_atc hidden lg:flex`}>
-                <Link className='flex transition-all ease-in-out bg-black px-[2rem] py-[.7rem] max-h-[3rem] h-[3rem] text-white rounded-full items-center justify-center' href='/'>
+                <Link className='flex transition-all ease-in-out bg-black px-[2rem] py-[.7rem] max-h-[3rem] h-[3rem] text-white rounded-full items-center justify-center' href='/contact'>
                     Contact Us
                 </Link>
                 <span className='w-[3rem] h-[3rem] flex rounded-full items-center justify-center border-2 border-black'>
