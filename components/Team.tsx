@@ -25,7 +25,7 @@ const Team: React.FC = () => {
   }, []);
 
   return (
-    <div className='z-[11] relative flex     flex-col items-center py-[50px] justify-start '>
+    <div className='z-[11] relative flex  bg-white   flex-col items-center py-[50px] justify-start '>
         <h2 className={`text-3xl ${Rancher} text-center  text-black md:text-7xl pb-3`}>Our team of friends</h2>
         <p className={` text-md text-center md:text-xl text-black ${SedaN} `} >Each And Every One Is A Preasure To Work With</p>
       <div 
