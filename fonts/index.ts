@@ -1,15 +1,15 @@
-import { Francois_One } from 'next/font/google';
-import { Quicksand
-} from 'next/font/google';
+import { Pontano_Sans, Ramabhadra } from 'next/font/google';
 
-const unbounded = Francois_One({
+const unbounded = Ramabhadra
+
+({
   subsets: ['latin'],
   weight: '400',
   variable: '--passionOne',
 });
 
  
-const acme = Quicksand
+const acme = Pontano_Sans
 ({
   subsets: ['latin'],
   weight: '400',

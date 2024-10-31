@@ -1,24 +1,25 @@
 export const  Nav_links = [
+    
     {
-      id: 1,
-      label: 'Pricing',
-      url: '/pricing'
-    },
-    {
-        id: 2,
-        label: 'Services +',
-        url: '#services'
+        id: 1,
+        label: 'Services',
+        url: '/#services'
       },
       {
-        id: 3,
+        id: 2,
         label: 'Works',
         url: '/work'
       },
       {
         id: 3,
         label: 'Testimonials',
-        url: '#testimonials'
-      }
+        url: '/#testimonials'
+      },
+      {
+        id: 4,
+        label: 'Team',
+        url: '/#team'
+      },
 ]
 export const megaMenu = [
   {
@@ -84,60 +85,63 @@ export const porfolioCards = [
   },
   {
     id: 6,
+    projectImage:'/screen-capture (20).webm',
+    projectTitle: 'Fizzythc',
+    projectSubtitle: 'Wordpress Development',
+    projectLink: 'https://fizzythc.com/',
+  },
+  {
+    id: 7,
     projectImage:'/screen-capture (5).webm',
     projectTitle: 'Stormdamage',
     projectSubtitle: 'Wordpress Development',
     projectLink: 'https://stormdamage.com/',
   },
-  {
-    id: 7,
-    projectImage:'/screen-capture (6).webm',
-    projectTitle: 'Law',
-    projectSubtitle: 'Wordpress Development',
-    projectLink: 'https://cd-lawyers.com/',
-  },
+
   {
     id: 8,
-    projectImage:'/screen-capture (8).webm',
-    projectTitle: 'HawkLaw',
-    projectSubtitle: 'Wordpress Development',
-    projectLink: 'https://www.hawklawfirm.com/',
-  },
-  {
-    id: 9,
     projectImage:'/screen-capture (9).webm',
     projectTitle: 'Nature Footage',
     projectSubtitle: 'Wordpress Development',
     projectLink: 'https://www.naturefootage.com/',
   },
+ 
   {
-    id: 10,
-    projectImage:'/screen-capture (10).webm',
-    projectTitle: 'Chad Jones Law',
-    projectSubtitle: 'Wordpress Development',
-    projectLink: 'https://www.chadjoneslaw.com/',
-  },
-  {
-    id: 11,
+    id: 9,
     projectImage:'/screen-capture (11).webm',
     projectTitle: 'Data Deposit Box',
     projectSubtitle: 'Wordpress Development',
     projectLink: 'https://datadepositbox.com/',
   },
   {
+    id: 10,
+    projectImage:'/screen-capture (16).webm',
+    projectTitle: 'CyberSaint Security',
+    projectSubtitle: 'HubSpot Development',
+    projectLink: 'https://www.cybersaint.io/',
+  },
+  {
+    id: 11,
+    projectImage:'/screen-capture (17).webm',
+    projectTitle: 'Conexiom',
+    projectSubtitle: 'HubSpot Development',
+    projectLink: 'https://conexiom.com/',
+  },
+  {
     id: 12,
+    projectImage:'/screen-capture (18).webm',
+    projectTitle: 'Synack Acropolis',
+    projectSubtitle: 'HubSpot Development',
+    projectLink: 'https://acropolis.synack.com/',
+  },
+  {
+    id: 13,
     projectImage:'/screen-capture (13).webm',
     projectTitle: 'Mulesoft',
     projectSubtitle: 'HubSpot Development',
     projectLink: 'https://www.mulesoft.com/',
   },
-  {
-    id: 13,
-    projectImage:'/screen-capture (14).webm',
-    projectTitle: 'Vision6',
-    projectSubtitle: 'HubSpot Development',
-    projectLink: 'https://www.vision6.com.au/',
-  },
+ 
   {
     id: 14,
     projectImage:'/screen-capture (15).webm',
@@ -147,52 +151,64 @@ export const porfolioCards = [
   },
   {
     id: 15,
-    projectImage:'/screen-capture (16).webm',
-    projectTitle: 'CyberSaint Security',
+    projectImage:'/screen-capture (21).webm',
+    projectTitle: 'Last Strategic Marketing',
     projectSubtitle: 'HubSpot Development',
-    projectLink: 'https://www.cybersaint.io/',
+    projectLink: 'https://www.lastrategicmarketing.com/',
   },
-  {
-    id: 16,
-    projectImage:'/screen-capture (17).webm',
-    projectTitle: 'Conexiom',
-    projectSubtitle: 'HubSpot Development',
-    projectLink: 'https://conexiom.com/',
-  },
-  {
-    id: 17,
-    projectImage:'/screen-capture (18).webm',
-    projectTitle: 'Synack Acropolis',
-    projectSubtitle: 'HubSpot Development',
-    projectLink: 'https://acropolis.synack.com/',
-  }
+  
 
 ]
 export const clientTestimonials = [
   {
     id: 1,
-    icon: '/wired-gradient-27-globe-hover-rotate.gif',
-    title: 'Speed & agility',
-    subtitle: 'Get quick results with our weekly plans, perfect for fast projects'
+    icon: '/web.png',
+    title: 'Web Development',
+    subtitle: 'From concept to launch, our web development team is here to build responsive and dynamic websites that meet your specific needs and engage your audience.'
   },
   {
     id: 2,
-    icon: '/wired-gradient-27-globe-hover-rotate.gif',
-    title: 'Innovation',
-    subtitle: 'Embrace cutting-edge technology with our innovative solutions'
+    icon: '/shopify1.png',
+    title: 'Shopify Development',
+    subtitle: 'Build your dream online store with our Shopify development services. We create tailored solutions that not only look great but also drive sales and grow your business.'
   },
   {
     id: 3,
-    icon: '/wired-gradient-27-globe-hover-rotate.gif',
-    title: 'Collaboration',
-    subtitle: 'Work seamlessly with our team for optimal results'
+    icon: '/wordpress1.png',
+    title: 'WordPress Development',
+    subtitle: 'Whether you need a blog, portfolio, or a full-fledged business site, our WordPress development services help you create a website that truly represents your brand.'
   },
   {
     id: 4,
-    icon: '/wired-gradient-27-globe-hover-rotate.gif',
-    title: 'Customer Focus',
-    subtitle: 'Prioritize customer satisfaction with tailored solutions'
-  }
+    icon: '/hubspot.png',
+    title: 'HubSpot Development',
+    subtitle: 'Maximize your marketing efforts with our HubSpot development services. We’ll help you set up and optimize your CRM to enhance your customer relationships.'
+  },
+  {
+    id: 5,
+    icon: '/seo.png',
+    title: 'SEO',
+    subtitle: 'Want to be found online? Our SEO experts will craft a tailored strategy to boost your website’s visibility and attract more organic traffic.'
+  },
+  {
+    id: 6,
+    icon: '/speed.png',
+    title: 'Website Speed Optimizations',
+    subtitle: 'Don’t let slow load times drive away visitors. Our speed optimization services ensure your website runs smoothly and keeps users engaged.'
+  },
+  {
+    id: 7,
+    icon: '/graphic.png',
+    title: 'Graphic Designing',
+    subtitle: 'Make a lasting impression with our graphic design services. We create eye-catching visuals that tell your brand’s story and connect with your audience.'
+  },
+  {
+    id: 8,
+    icon: '/uiux.png',
+    title: 'UI/UX Designing',
+    subtitle: 'Great design goes beyond looks. Our UI/UX design services focus on creating intuitive interfaces that provide a seamless experience for your users.'
+  },
+ 
 ];
 export const clientReviews = [
   {
@@ -234,7 +250,7 @@ export const clientReviews = [
 export const TeamInfo = [
   {
     id: 1,
-    profileImage: '/vecteezy_ai-generated-man-standing-proudly-on-transparent-background_38148064.png',
+    profileImage: '/image (33).png',
     profileName: 'Calum',
     profileProfession: 'Associate at Waypoint',
     backgroundColor: '#FC6D90'
@@ -242,17 +258,14 @@ export const TeamInfo = [
   {
     id: 2,
     backgroundColor: '#FFCCF0',
-    profileImage: '/1.png',
-
+    profileImage: '/image (34).png',
     profileName: 'Calum',
     profileProfession: 'Associate at Waypoint'
   },
   {
     id: 3,
     backgroundColor: '#BBE7E6',
-
-    profileImage: '/2.png',
-
+    profileImage: '/image (35).png',
     profileName: 'Calum',
     profileProfession: 'Associate at Waypoint'
   },

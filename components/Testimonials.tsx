@@ -12,7 +12,7 @@ import {  Rancher, SedaN } from '@/fonts';
 
 const Testimonials = () => {
   return (
-    <div className=' pb-10 lg:py-[50px] bg-black lg:px-0 px-4 z-[111] relative'>
+    <div id="testimonials" className=' pb-10 lg:py-[50px] bg-black lg:px-0 px-4 z-[111] relative'>
       <div className='m-auto max-w-[900px]'>
         <h2 style={{ lineHeight: "100%" }} className={` ${Rancher} text-center text-white mb-10 lg:mb-20 text-3xl lg:text-[4.5vw]`}>
           Testimonials 

@@ -26,11 +26,15 @@ const Services: React.FC = () => {
   return (
     <div className='z-[11] relative flex lg:flex-row flex-col items-center py-[50px] justify-start bg-black'>
       <div className='w-[100%] pt-[3%] lg:pt-0 lg:w-[60%] text-white pl-6  lg:pl-10 pr-4'>
-        <h2 className={` ${Rancher} text text-3xl lg:text-[4.5vw]`} style={{ lineHeight: '110%' }}>
-         How We Help Digital Businesses?
+        <h2 className={` ${Rancher} text text-3xl lg:text-[4.5vw]`} style={{ lineHeight: '100%' }}>
+           Your Vision, 
+           <br></br>
+           <span className='text-[#4CC9FE]  font-bold'>
+           Our Expertise
+           </span>
         </h2>
-        <p className={`text-gray-300 text-md sm:text-xl mt-8 ${SedaN} `} >
-          Whether you’re testing ideas or need a quick turnaround, our subscription allows you to scale and adapt effortlessly on web.
+        <p className={`text-gray-200 text-lg sm:text-2xl mt-8 ${SedaN} `} >
+        Got a big idea? Let’s bring it to life. Our team of skilled professionals is ready to turn your vision into reality. With a focus on cutting-edge technology and personalized service, we deliver results.
         </p>
        
       </div>
@@ -60,18 +64,18 @@ const Services: React.FC = () => {
           {clientTestimonials.map((item) => (
             <SwiperSlide key={item.id} className='bg-[#1A1C21] flex flex-col p-8 rounded-lg'>
               <div className='flex h-full flex-col items-start justify-between'>
-                <div className='min-h-[120px] min-w-[120px]'>
+                <div className='min-h-[150px] min-w-[150px]'>
                   <Image
-                    style={{ height: '120px', width: '120px' }}
-                    className='min-h-[120px] min-w-[120px]'
+                    style={{ height: '150px', width: '150px', objectFit:'contain' }}
+                    className='min-h-[120px] min-w-[150px] object-contain'
                     src={item.icon}
-                    height={150}
-                    width={150}
+                    height={250}
+                    width={250}
                     alt={item.title}
                   />
                 </div>
                 <div className='flex flex-col text-white text-start gap-4'>
-                  <h3 className={` text-xl  lg:text-3xl font-bold ${Rancher} `}>{item.title}</h3>
+                  <h3 className={` text-xl text-[#4CC9FE]  lg:text-3xl font-bold ${Rancher} `}>{item.title}</h3>
                   <h5 className={`  text-sm lg:text-md ${SedaN} `}>{item.subtitle}</h5>
                 </div>
               </div>

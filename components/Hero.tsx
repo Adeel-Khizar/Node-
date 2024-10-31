@@ -54,14 +54,15 @@ const Hero = () => {
           /> */}
           
   <h1 style={{
-                 lineHeight: '100%'
-            }} className={`text-black text-[8vw] mb-5 lg:mb-10 md:text-[4.1vw] ${Rancher} `}>Empowering the Unicorns of tomorrow</h1>
-            <p className={`text-black text-[1rem] md:text-[1.5rem] ${SedaN} `}>A subscription agency focused on revamping websites for next-gen digital business with no-code solutions</p>
+                 lineHeight: '100%',
+                 fontWeight: 900
+            }} className={`text-black uppercase  text-[8vw] mb-5 lg:mb-6 md:text-[4.1vw] ${Rancher} `}>Your Trusted  Partner  <br></br> <span className="text-blue-900"> for Success </span></h1>
+            <p className={`text-black text- md:text-[1.5rem] ${SedaN} `}>We’re not just a service provider; we’re here to be your partner in innovation. By getting to know your goals, we develope personalized solutions that help you succeed. Let’s team up and make your dreams a reality!</p>
           </div>
           
               <div className='hero_atc flex'>
               
-              <Link className={` flex transition-all ease-in-out bg-black px-[2rem] py-[.7rem] max-h-[3rem] h-[3rem] text-white rounded-full items-center justify-center ${SedaN} `} href='/'> View our portfolio </Link> 
+              <Link className={` flex transition-all ease-in-out bg-black px-[2rem] py-[.7rem] max-h-[3rem] h-[3rem] text-white rounded-full items-center justify-center ${SedaN} `} href='#portfolio'> View our portfolio </Link> 
               <span className='w-[3rem] h-[3rem] flex  rounded-full items-center justify-center border-2 border-black'>
               <svg className='h-[2rem] w-[1.25rem]' width="100%" height="100%" viewBox="0 0 24 25" fill="#fffff">
 

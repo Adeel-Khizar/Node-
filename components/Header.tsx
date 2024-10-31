@@ -7,15 +7,15 @@ import Link from 'next/link';
 
 const Header = () => {
     const [menu, setMenu] = useState(false);
-    const [hover, setHover] = useState(false);
+    // const [hover, setHover] = useState(false);
     
     const toggleMenu = () => {
         setMenu(prev => !prev);
     };
     
-    const toggleHover = () => {
-        setHover(prev => !prev);
-    };
+    // const toggleHover = () => {
+    //     setHover(prev => !prev);
+    // };
 
     return (
         <div className='bg-white lg:fixed  cursor-default top-0  fixed lg:z-[1111111111] z-[1111111] min-h-[80px] lg:min-h-[90px] py-[1rem] md:px-[2.5rem] px-[1rem] flex lg:flex-row flex-col lg:gap-0 gap-10 items-start lg:items-center md:justify-between  w-full'>
@@ -26,8 +26,11 @@ const Header = () => {
             </div>
             <div className={menu ? `flex lg:flex-row flex-col gap-6 lg:gap-[2rem] items-start lg:items-center h-full justify-center` : `hidden lg:flex lg:flex-row flex-col gap-6 lg:gap-[2rem] items-start lg:items-center h-full justify-center`}>
                 {Nav_links.map(link => (
-                    <div  onMouseEnter={link.label === "Services +" ? toggleHover : undefined} 
-                    onMouseLeave={link.label === "Services +" ? toggleHover : undefined} className="relative" key={link.id}>
+                    <div 
+                    //  onMouseEnter={link.label === "Services +" ? toggleHover : undefined} 
+                    // onMouseLeave={link.label === "Services +" ? toggleHover : undefined} 
+                    
+                    className="relative" key={link.id}>
                         <Link 
                             className="text-lg" 
                             href={link.url} 
@@ -35,7 +38,7 @@ const Header = () => {
                         >
                             {link.label}
                         </Link>
-                        {link.label === "Services +" && hover && (
+                        {/* {link.label === "Services +" && hover && (
                           <Link href={link.url} >
                             <div className={hover ?  `grid mega__Menu gap-3  z-[1111111111111] min-w-[30rem] grid-cols-2 absolute -mt-2 pt-10  sideanime` : `grid mega__Menu gap-3  z-[1111111111111] min-w-[30rem] grid-cols-2 absolute -mt-2 pt-10 `  }>
                                 {megaMenu.map((service) => (
@@ -46,12 +49,12 @@ const Header = () => {
                                 ))}
                             </div>
                             </Link>
-                        )}
+                        )} */}
                     </div>
                 ))}
             </div>
             <div className={menu ? `hero_atc flex` : ` hero_atc hidden lg:flex`}>
-                <Link className='flex transition-all ease-in-out bg-black px-[2rem] py-[.7rem] max-h-[3rem] h-[3rem] text-white rounded-full items-center justify-center' href='/contact'>
+                <Link className='flex transition-all ease-in-out bg-black px-[2rem] py-[.7rem] max-h-[3rem] h-[3rem] text-white rounded-full items-center justify-center' href='/'>
                     Contact Us
                 </Link>
                 <span className='w-[3rem] h-[3rem] flex rounded-full items-center justify-center border-2 border-black'>

@@ -50,9 +50,10 @@ const Home = () => {
       </div>
       <CursorProvider>
       <Portfolio />
-      <Solutions />
-      <Testimonials/>
       <Services/>
+
+      {/* <Solutions /> */}
+      <Testimonials/>
       <Team/>
       <FAQS/>
     </CursorProvider>

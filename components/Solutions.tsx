@@ -24,7 +24,7 @@ const Solutions: React.FC = () => {
   }, []);
 
   return (
-    <div className='z-[11] relative flex lg:flex-row flex-col items-center py-[50px] justify-start bg-black'>
+    <div id="services" className='z-[11] relative flex lg:flex-row flex-col items-center py-[50px] justify-start bg-black'>
       <div className='w-[100%] pt-[3%] lg:pt-0 lg:w-[60%] text-white pl-6  lg:pl-10 pr-4'>
         <h2 className={` ${Rancher} text text-3xl lg:text-[4.5vw]`} style={{ lineHeight: '110%' }}>
           Strategic approach with (*studio like) creativity
@@ -69,10 +69,10 @@ const Solutions: React.FC = () => {
           {clientTestimonials.map((item) => (
             <SwiperSlide key={item.id} className='bg-[#1A1C21] flex flex-col p-8 rounded-lg'>
               <div className='flex h-full flex-col items-start justify-between'>
-                <div className='min-h-[120px] min-w-[120px]'>
+                <div className='min-h-[150px] min-w-[150px]'>
                   <Image
-                    style={{ height: '120px', width: '120px' }}
-                    className='min-h-[120px] min-w-[120px]'
+                    style={{ height: '150px', width: '150px', objectFit: 'contain' }}
+                    className='min-h-[150px] min-w-[150px]'
                     src={item.icon}
                     height={150}
                     width={150}
