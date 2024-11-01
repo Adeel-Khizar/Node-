@@ -22,9 +22,11 @@ export function MoreCaseStudies() {
   previousWork.slice(0, 3).map((item) => (
     <div key={item.title}> {/* Adding a unique key prop */}
       <Link href={item.url}>
-        <DirectionAwareHover imageUrl={item.Imgurl}>
-          <h2 className="font-bold text-2xl">{item.title}</h2>
-          <p className="font-normal text-sm">{item.description}</p>
+        <DirectionAwareHover title={item.title} imageUrl={item.Imgurl}>
+          <h2 style={{
+            fontFamily: '900'
+          }} className={`${SedaN} font-bold text-4xl `}>{item.title}</h2>
+          <p className={`${SedaN} font-normal text-xl`}>{item.description}</p>
         </DirectionAwareHover>
       </Link>
     </div>

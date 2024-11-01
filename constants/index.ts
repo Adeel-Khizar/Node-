@@ -87,7 +87,7 @@ export const porfolioCards = [
     id: 6,
     projectImage:'/screen-capture (20).webm',
     projectTitle: 'Fizzythc',
-    projectSubtitle: 'Wordpress Development',
+    projectSubtitle: 'Shopify Development',
     projectLink: 'https://fizzythc.com/',
   },
   {
@@ -115,47 +115,33 @@ export const porfolioCards = [
   },
   {
     id: 10,
+    projectImage:'/screen-capture (21).webm',
+    projectTitle: 'Last Strategic Marketing',
+    projectSubtitle: 'Wordpress Development',
+    projectLink: 'https://www.lastrategicmarketing.com/',
+  },
+  {
+    id: 11,
     projectImage:'/screen-capture (16).webm',
     projectTitle: 'CyberSaint Security',
     projectSubtitle: 'HubSpot Development',
     projectLink: 'https://www.cybersaint.io/',
   },
   {
-    id: 11,
+    id: 12,
     projectImage:'/screen-capture (17).webm',
     projectTitle: 'Conexiom',
     projectSubtitle: 'HubSpot Development',
     projectLink: 'https://conexiom.com/',
   },
   {
-    id: 12,
+    id: 13,
     projectImage:'/screen-capture (18).webm',
     projectTitle: 'Synack Acropolis',
     projectSubtitle: 'HubSpot Development',
     projectLink: 'https://acropolis.synack.com/',
-  },
-  {
-    id: 13,
-    projectImage:'/screen-capture (13).webm',
-    projectTitle: 'Mulesoft',
-    projectSubtitle: 'HubSpot Development',
-    projectLink: 'https://www.mulesoft.com/',
-  },
- 
-  {
-    id: 14,
-    projectImage:'/screen-capture (15).webm',
-    projectTitle: 'Birdeye',
-    projectSubtitle: 'HubSpot Development',
-    projectLink: 'https://birdeye.com/',
-  },
-  {
-    id: 15,
-    projectImage:'/screen-capture (21).webm',
-    projectTitle: 'Last Strategic Marketing',
-    projectSubtitle: 'HubSpot Development',
-    projectLink: 'https://www.lastrategicmarketing.com/',
-  },
+  }
+  
   
 
 ]
@@ -258,59 +244,132 @@ export const TeamInfo = [
   {
     id: 2,
     profileImage: '/team6.png',
+    profileName: 'Hamza Bakhtiar',
+    profileProfession: 'Head Of Sales',
+    backgroundColor: '#668493'
+  },
+  {
+    id: 2,
+    profileImage: '/team6.png',
     profileName: 'Huzaifa Bahadur',
-    profileProfession: 'Project Manager/Cordination Support',
+    profileProfession: 'Project Manager/Coordination Support',
     backgroundColor: '#668493'
   },
   {
     id: 3,
-    profileImage: '/team7.png',
+    profileImage: '/team6.png',
     profileName: 'Abdul Mannan Abbasi',
     profileProfession: 'Sr. Front End/Shopify Developer',
-    backgroundColor: '#292725'
+    backgroundColor: '#0F664E'
   },
   {
+    id: 2,
+    profileImage: '/team6.png',                                                       
+    profileName: 'Jabir Ali',
+    profileProfession: 'Sr. WordPress Developer/Technical Lead',
+    backgroundColor: '#668493'
+  },
+  {
+    id: 2,
+    profileImage: '/team6.png',
+    profileName: 'Umer Nawaz',
+    profileProfession: 'Sr. Shopify/HubSpot Developer',
+    backgroundColor: '#668493'
+  },
+  {
+    id: 2,
+    profileImage: '/team6.png',
+    profileName: 'Umer Farooq',
+    profileProfession: 'Sr. Front End/Shopify Developer',
+    backgroundColor: '#668493'
+  },
+  {
+    id: 2,
+    profileImage: '/team6.png',
+    profileName: 'Muhammad Farhan',
+    profileProfession: 'Sr. Shopify Developer',
+    backgroundColor: '#668493'
+  },
+  
+  {
     id: 4,
-    profileImage: '/team5.png',
+    profileImage: '/team6.png',                                                               
     profileName: 'Irfan Khan',
     profileProfession: 'Sr. WordPress Developer',
     backgroundColor: '#CCE6FF'
   },
   {
+    id: 2,
+    profileImage: '/team6.png',
+    profileName: 'Nafey Ul Din',
+    profileProfession: 'Shopify Developer',
+    backgroundColor: '#668493'
+  },
+  {
+    id: 2,
+    profileImage: '/team6.png',
+    profileName: 'Fahad Irfan',
+    profileProfession: 'Shopify Developer',
+    backgroundColor: '#668493'
+  },
+  {
+    id: 2,
+    profileImage: '/team6.png',
+    profileName: 'Malik Osama',
+    profileProfession: 'Jr. Shopify Developer',
+    backgroundColor: '#668493'
+  },
+  {
+    id: 2,
+    profileImage: '/team6.png',                                                       
+    profileName: 'Munneeb ',
+    profileProfession: 'Jr. Shopify Developer',
+    backgroundColor: '#668493'
+  },
+  {
+    id: 2,
+    profileImage: '/team6.png',                                                       
+    profileName: 'Usman Khalid ',
+    profileProfession: 'Jr. Shopify Developer',
+    backgroundColor: '#668493'
+  },
+ 
+  {
     id: 5,
-    profileImage: '/team4.png',
+    profileImage: '/team6.png',
     profileName: 'Junaid Hassan',
     profileProfession: 'Jr. WordPress Developer',
     backgroundColor: '#617498'
   },
   {
     id: 6,
-    profileImage: '/team9.png',
+    profileImage: '/team6.png',
     profileName: 'Usama Bakhtiar',
     profileProfession: 'Jr. Front End/HubSpot Developer',
     backgroundColor: '#454243'
   },
   {
     id: 7,
-    profileImage: '/team1.png',
-    profileName: 'Calum',
-    profileProfession: 'Associate at Waypoint',
-    backgroundColor: '#282E3D'
-  },
-  {
-    id: 8,
-    profileImage: '/team2.png',
-    profileName: 'Calum',
-    profileProfession: 'Associate at Waypoint',
-    backgroundColor: '#AC2658'
-  },
-  {
-    id: 9,
-    profileImage: '/team3.png',
+    profileImage: '/team6.png',
     profileName: 'Husnain Rehman',
     profileProfession: 'Jr. Shopify Developer',
     backgroundColor: '#2B3143'
-  }
+  },
+  {
+    id: 8,
+    profileImage: '/team6.png',
+    profileName: 'Ahmed Malik',
+    profileProfession: 'Frontend/Shopify Intern',
+    backgroundColor: '#282E3D'
+  },
+  {
+    id: 9,
+    profileImage: '/team6.png',
+    profileName: 'Abdul Rafay',
+    profileProfession: 'Frontend/Shopify Developer',
+    backgroundColor: '#AC2658'
+  },
+  
 ];
 
 export const faqs = [
@@ -349,107 +408,45 @@ export const faqs = [
 export const previousWork = [
   {
     id: 1,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    Imgurl: "/www.sweattent.com_.png",
+    title:'Sweat Tent',
+    description: "Shopify Development",
     url: '/'
   },
   {
     id: 2,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    Imgurl: "/scentsupplyco.com_.png",
+    title:'Scent Supplyco',
+    description: "Shopify Development",
     url: '/'
   },
   {
     id: 3,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    Imgurl: "/www.mdsassociates.com_.png",
+    title:'MDS Associates',
+    description: "Shopify Development",
     url: '/'
   },
   {
     id: 4,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    Imgurl: "/www.maillard.co_.png",
+    title:'Maillard',
+    description: "Shopify Development",
     url: '/'
   },
   {
     id: 5,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    Imgurl: "/www.biltwellinc.com_.png",
+    title:'Biltwell',
+    description: "Shopify Development",
     url: '/'
   },
   {
     id: 6,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
+    Imgurl: "/stormdamage.com_.png",
+    title:'Stormdamage',
+    description: "Wordpress Development",
     url: '/'
   },
-  {
-    id: 7,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
-    url: '/'
-  },
-  {
-    id: 8,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
-    url: '/'
-  },
-  {
-    id: 9,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
-    url: '/'
-  },
-  {
-    id: 10,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
-    url: '/'
-  },
-  {
-    id: 11,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
-    url: '/'
-  },
-  {
-    id: 12,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
-    url: '/'
-  },
-  {
-    id: 13,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
-    url: '/'
-  },
-  {
-    id: 14,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
-    url: '/'
-  },
-  {
-    id: 15,
-    Imgurl: "/s3.jpg",
-    title:'Netceed',
-    description: "Design, Development, Integrations, Marketing, BigCommerce",
-    url: '/'
-  }
+  
 ]

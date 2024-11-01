@@ -44,7 +44,7 @@ const Team: React.FC = () => {
         </motion.div>
         <Swiper
           direction={isMobile ? 'horizontal' : 'horizontal'}
-          slidesPerView={isMobile ? 1 : 3.5}
+          slidesPerView={isMobile ? 1 : 3.1}
           spaceBetween={0}
           mousewheel={true}
           scrollbar={true}

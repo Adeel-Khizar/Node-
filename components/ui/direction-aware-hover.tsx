@@ -4,15 +4,18 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../../libs/utils";
+import { SedaN } from "@/fonts";
 
 export const DirectionAwareHover = ({
   imageUrl,
+  title,
   children,
   childrenClassName,
   imageClassName,
   className,
 }: {
   imageUrl: string;
+  title:string;
   children: React.ReactNode | string;
   childrenClassName?: string;
   imageClassName?: string;
@@ -86,6 +89,9 @@ export const DirectionAwareHover = ({
               ease: "easeOut",
             }}
           >
+            <h1 style={{
+              fontWeight: 900
+            }} className={` ${SedaN} font-extrabold absolute top-0 border-2 border-black z-40 text-3xl bg-white p-3 text-black left-0`}>{title}</h1>
             <Image
               alt="image"
               className={cn(
