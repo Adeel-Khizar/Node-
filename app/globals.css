@@ -195,7 +195,7 @@ body {
   .testimonialSwiper .swiper-wrapper{
     height: 60vh;
     }
-    .TeamS .swiper-slide:nth-child(1) .item {
+    /* .TeamS .swiper-slide:nth-child(1) .item {
       transform: translateY(-44px);
     }
     
@@ -213,7 +213,7 @@ body {
     
     .TeamS .swiper-slide:nth-child(5) .item {
       transform: translateY(-44px);
-    }
+    } */
     
 }
 
@@ -438,7 +438,32 @@ body {
    opacity: 0;
 }
 .contact_form label{
-  font-weight: bold;
+  font-size: 3.5vw;
+  margin-right: 1.5vw;
+}
+@media screen and (max-width: 768px) {
+  .contact_form label{
+    font-size: 25px !important;
+    margin-right: 10px !important;
+  }
+  .contact_form input,
+.contact_form textarea{
+  font-size: 16px !important;
+  padding: 5px !important;
+}
+.contact_form .options label{
+  font-size: 18px !important;
+  padding: 5px 15px !important;
+}
+}
+.contact_form input,
+.contact_form textarea{
+  font-size: 2vw;
+  padding: 1vw;
+}
+.contact_form .options label{
+  font-size: 2vw;
+  padding: 1vw;
 }
 .contact_form input[type="text"],
 .contact_form input[type="textarea"]{

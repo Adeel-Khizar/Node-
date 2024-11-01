@@ -76,7 +76,7 @@ const Services: React.FC = () => {
                 </div>
                 <div className='flex flex-col text-white text-start gap-4'>
                   <h3 className={` text-xl text-[#4CC9FE]  lg:text-3xl font-bold ${Rancher} `}>{item.title}</h3>
-                  <h5 className={`  text-sm lg:text-md ${SedaN} `}>{item.subtitle}</h5>
+                  <h5 className={`  text-md lg:text-lg ${SedaN} `}>{item.subtitle}</h5>
                 </div>
               </div>
             </SwiperSlide>

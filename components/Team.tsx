@@ -44,7 +44,7 @@ const Team: React.FC = () => {
         </motion.div>
         <Swiper
           direction={isMobile ? 'horizontal' : 'horizontal'}
-          slidesPerView={isMobile ? 1 : 4.5}
+          slidesPerView={isMobile ? 1 : 3.5}
           spaceBetween={0}
           mousewheel={true}
           scrollbar={true}
@@ -60,6 +60,9 @@ const Team: React.FC = () => {
                       background: `${item.backgroundColor}`
                     }} className={`absolute h-[70%] rounded-2xl -z-10 w-full bottom-0 left-0`}></div>
                     <Image
+                    style={{
+                      objectFit: "cover"
+                    }}
                       src={item.profileImage}
                       height={1500}
                       width={1500}

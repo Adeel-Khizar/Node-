@@ -250,66 +250,100 @@ export const clientReviews = [
 export const TeamInfo = [
   {
     id: 1,
-    profileImage: '/image (33).png',
-    profileName: 'Calum',
-    profileProfession: 'Associate at Waypoint',
-    backgroundColor: '#FC6D90'
+    profileImage: '/team8.png',
+    profileName: 'Adeel Khizer',
+    profileProfession: 'Floor Manager/Technical Lead',
+    backgroundColor: '#724657'
   },
   {
     id: 2,
-    backgroundColor: '#FFCCF0',
-    profileImage: '/image (34).png',
-    profileName: 'Calum',
-    profileProfession: 'Associate at Waypoint'
+    profileImage: '/team6.png',
+    profileName: 'Huzaifa Bahadur',
+    profileProfession: 'Project Manager/Cordination Support',
+    backgroundColor: '#668493'
   },
   {
     id: 3,
-    backgroundColor: '#BBE7E6',
-    profileImage: '/image (35).png',
-    profileName: 'Calum',
-    profileProfession: 'Associate at Waypoint'
+    profileImage: '/team7.png',
+    profileName: 'Abdul Mannan Abbasi',
+    profileProfession: 'Sr. Front End/Shopify Developer',
+    backgroundColor: '#292725'
   },
   {
     id: 4,
-    backgroundColor: '#EFE6F9',
-
-    profileImage: '/3.png',
-
-    profileName: 'Calum',
-    profileProfession: 'Associate at Waypoint'
+    profileImage: '/team5.png',
+    profileName: 'Irfan Khan',
+    profileProfession: 'Sr. WordPress Developer',
+    backgroundColor: '#CCE6FF'
   },
   {
     id: 5,
-    backgroundColor: '#FC6D90',
-
-
-    profileImage: '/vecteezy_ai-generated-man-standing-proudly-on-transparent-background_38148064.png',
-
-    profileName: 'Calum',
-    profileProfession: 'Associate at Waypoint'
+    profileImage: '/team4.png',
+    profileName: 'Junaid Hassan',
+    profileProfession: 'Jr. WordPress Developer',
+    backgroundColor: '#617498'
   },
+  {
+    id: 6,
+    profileImage: '/team9.png',
+    profileName: 'Usama Bakhtiar',
+    profileProfession: 'Jr. Front End/HubSpot Developer',
+    backgroundColor: '#454243'
+  },
+  {
+    id: 7,
+    profileImage: '/team1.png',
+    profileName: 'Calum',
+    profileProfession: 'Associate at Waypoint',
+    backgroundColor: '#282E3D'
+  },
+  {
+    id: 8,
+    profileImage: '/team2.png',
+    profileName: 'Calum',
+    profileProfession: 'Associate at Waypoint',
+    backgroundColor: '#AC2658'
+  },
+  {
+    id: 9,
+    profileImage: '/team3.png',
+    profileName: 'Husnain Rehman',
+    profileProfession: 'Jr. Shopify Developer',
+    backgroundColor: '#2B3143'
+  }
 ];
+
 export const faqs = [
   {
       id: 1,
-      header: "What is Lorem Ipsum?",
-      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`
+      header: "What services do you offer?",
+      text: `We provide website development, WordPress and Shopify development, HubSpot integration, graphic design, UI/UX design, and more to help your business thrive online.`
   },
   {
       id: 2,
-      header: "Where does it come from?",
-      text: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. `
+      header: "How can I get a quote for your services?",
+      text: `To receive a quote, please reach out through our website’s contact form or call our sales team. We offer a complimentary initial consultation to discuss your project details and requirements, allowing us to provide a tailored estimate. `
   },
   {
       id: 3,
-      header: "Why do we use it?",
-      text: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,`
+      header: "What is your support response time?",
+      text: `Our standard response time for support inquiries is within 24 hours. For urgent issues, we strive to respond within 1 hour. We also offer priority support for clients who need immediate assistance.`
   },
   {
       id: 4,
-      header: "Where can I get some?",
-      text: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.`
-  }
+      header: "Do you provide ongoing support and maintenance?",
+      text: `Yes, we offer ongoing support and maintenance services to ensure your website and applications run smoothly and stay up-to-date with the latest technologies.`
+  },
+  {
+    id: 5,
+    header: "Do you provide ongoing support and maintenance?",
+    text: `Yes, we offer ongoing support and maintenance services to ensure your website and applications run smoothly and stay up-to-date with the latest technologies.`
+},
+{
+  id: 6,
+  header: "What is your typical project timeline?",
+  text: `Project timelines vary based on complexity, but most projects can be completed within a few weeks to a few months. We'll provide a specific timeline during our initial consultation.`
+}
 ]
 
 export const previousWork = [
