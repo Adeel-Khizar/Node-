@@ -21,7 +21,7 @@ export function MoreCaseStudies() {
       {
   previousWork.slice(0, 3).map((item) => (
     <div key={item.title}> {/* Adding a unique key prop */}
-      <Link href={item.url}>
+      <Link href={item.slug}>
         <DirectionAwareHover title={item.title} imageUrl={item.Imgurl}>
           <h2 style={{
             fontFamily: '900'

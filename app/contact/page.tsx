@@ -132,14 +132,14 @@ export default function Contact() {
         </form>
       </div>
 
-      {/* {popupVisible && ( */}
+      {popupVisible && (
         <div className="fixed inset-0 flex items-center justify-center bg-green bg-opacity-0 z-50">
           <div className="bg-white  flex items-center justify-center flex-col rounded-lg p-6 shadow-lg transform transition-all duration-300 scale-100">
             <h2 className="text-2xl mb-4">Thanks for submitting the form! We’ll get back to you soon.</h2>
             <button onClick={closePopup} className="bg-black hover:shadow-lg hover:shadow-white text-xl text-white px-4 py-2 rounded">Close</button>
           </div>
         </div>
-      {/* )} */}
+       )} 
     </div>
   );
 }
