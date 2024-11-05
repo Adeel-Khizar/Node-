@@ -430,7 +430,7 @@ export const TeamInfo = [
   },
   {
     id: 20,
-    profileImage: '/team6.png',
+    profileImage: '/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector-removebg-preview 1.png',
     profileName: 'Minahil Kanwal',
     profileProfession: 'Sales Coordinator',
     backgroundColor: '#AC2658',
@@ -440,7 +440,7 @@ export const TeamInfo = [
   },
   {
     id: 21,
-    profileImage: '/team6.png',
+    profileImage: '/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector-removebg-preview 1.png',
     profileName: 'Shazmeen Yaqoob',
     profileProfession: 'Sales Coordinator',
     backgroundColor: '#AC2658',
@@ -483,7 +483,7 @@ export const TeamInfo = [
   },
   {
     id: 25,
-    profileImage: '/team6.png',
+    profileImage: '/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector-removebg-preview 1.png',
     profileName: 'Mehmoona Hammad',
     profileProfession: 'HR Manager',
     backgroundColor: '#AC2658',
