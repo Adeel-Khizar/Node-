@@ -24,9 +24,9 @@ const Services: React.FC = () => {
   }, []);
 
   return (
-    <div className='z-[11] relative flex lg:flex-row flex-col items-center py-[50px] justify-start bg-black'>
+    <div className='z-[11] relative flex lg:flex-row flex-col items-center pt-[50px] md:py-[50px] justify-start bg-black'>
       <div className='w-[100%] pt-[3%] lg:pt-0 lg:w-[60%] text-white pl-6  lg:pl-10 pr-4'>
-        <h2 className={` ${Rancher} text text-3xl lg:text-[4.5vw]`} style={{ lineHeight: '100%' }}>
+        <h2 className={` ${Rancher} text text-4xl lg:text-[4.5vw]`} style={{ lineHeight: '100%' }}>
            Your Vision, 
            <br></br>
            <span className='text-[#4CC9FE]  font-bold'>
@@ -64,10 +64,12 @@ const Services: React.FC = () => {
           {clientTestimonials.map((item) => (
             <SwiperSlide key={item.id} className='bg-[#1A1C21] flex flex-col p-8 rounded-lg'>
               <div className='flex h-full flex-col items-start justify-between'>
-                <div className='min-h-[150px] min-w-[150px]'>
+                <div className='md:w-[150px] md:h-[150px] w-[100px] h-[100px] min-h-[100px] min-w-[100px] md:min-h-[150px] md:min-w-[150px]'>
                   <Image
-                    style={{ height: '150px', width: '150px', objectFit:'contain' }}
-                    className='min-h-[120px] min-w-[150px] object-contain'
+                  style={{
+                    objectFit: 'contain'
+                  }}
+                    className='min-h-[100px] md:w-[150px] md:h-[150px] w-[100px] h-[100px] min-w-[100px]  md:min-h-[120px] md:min-w-[150px] object-contain'
                     src={item.icon}
                     height={250}
                     width={250}
@@ -75,8 +77,8 @@ const Services: React.FC = () => {
                   />
                 </div>
                 <div className='flex flex-col text-white text-start gap-4'>
-                  <h3 className={` text-xl text-[#4CC9FE]  lg:text-3xl font-bold ${Rancher} `}>{item.title}</h3>
-                  <h5 className={`  text-md lg:text-lg ${SedaN} `}>{item.subtitle}</h5>
+                  <h3 className={` text-2xl text-[#4CC9FE]  lg:text-3xl font-bold ${Rancher} `}>{item.title}</h3>
+                  <h5 className={`  text-sm lg:text-lg ${SedaN} `}>{item.subtitle}</h5>
                 </div>
               </div>
             </SwiperSlide>

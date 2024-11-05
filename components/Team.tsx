@@ -13,10 +13,10 @@ const tabsData = [
   { id: 1, title: "Head of Sales" },
   { id: 2, title: "Management" },
   { id: 3, title: "Sales Coordinator" },
-  { id: 4, title: "Internee" },
-  { id: 5, title: "Shopify Developer" },
-  { id: 6, title: "Wordpress Developer" },
-  { id: 7, title: "Hubspot Developer" }
+  { id: 4, title: "Shopify Developer" },
+  { id: 5, title: "Wordpress Developer" },
+  { id: 6, title: "Hubspot Developer" },
+  { id: 7, title: "Internee" }
 ];
 
 const Team: React.FC = () => {
@@ -43,9 +43,9 @@ const Team: React.FC = () => {
 
   return (
     <div id="team" className='z-[11] relative flex bg-white flex-col items-center py-[50px] justify-start'>
-      <h2 className={`text-3xl ${Rancher} text-center text-black md:text-7xl pb-3`}>Our team of friends</h2>
+      <h2 className={`text-4xl ${Rancher} text-center text-black md:text-7xl pb-3`}>Our team of friends</h2>
       <p className={`text-md text-center md:text-xl text-black ${SedaN}`}>Each And Every One Is A Pleasure To Work With</p>
-      <div className='teamTabs flex gap-4 flex-wrap p-5 items-center justify-center w-full'>
+      <div className='teamTabs md:overflow-auto overflow-x-scroll   md:flex gap-4 md:flex-wrap p-5 items-center justify-center w-full'>
         {tabsData.map((item) => (
           <div 
             key={item.id} 

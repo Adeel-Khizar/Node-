@@ -18,9 +18,9 @@ const Header = () => {
     // };
 
     return (
-        <div className='bg-white lg:fixed  cursor-default top-0  fixed lg:z-[1111111111] z-[1111111] min-h-[80px] lg:min-h-[90px] py-[1rem] md:px-[2.5rem] px-[1rem] flex lg:flex-row flex-col lg:gap-0 gap-10 items-start lg:items-center md:justify-between  w-full'>
+        <div className='bg-white  lg:fixed  cursor-default top-0  fixed lg:z-[1111111111] z-[1111111] min-h-[80px] lg:min-h-[90px] py-[1rem] md:px-[2.5rem] px-[1rem] flex lg:flex-row flex-col lg:gap-0 gap-10 items-start lg:items-center md:justify-between  w-full'>
             <div>
-                <Link href="/">
+                <Link  href="/">
                 <Image className='w-auto h-[45px] lg:h-[55px]' src={NodeLogo} height={75} alt='Node Logo' />
                 </Link>
             </div>
@@ -31,7 +31,10 @@ const Header = () => {
                     // onMouseLeave={link.label === "Services +" ? toggleHover : undefined} 
                     
                     className="relative" key={link.id}>
-                        <Link 
+                        <Link  
+                            onClick={ () => {
+                                setMenu(prev => !prev);
+                            }}
                             className="text-lg text-black" 
                             href={link.url} 
                            
@@ -54,7 +57,9 @@ const Header = () => {
                 ))}
             </div>
             <div className={menu ? `hero_atc flex` : ` hero_atc hidden lg:flex`}>
-                <Link className='flex transition-all ease-in-out bg-black px-[2rem] py-[.7rem] max-h-[3rem] h-[3rem] text-white rounded-full items-center justify-center' href='/contact'>
+                <Link onClick={ () => {
+                                setMenu(prev => !prev);
+                            }} className='flex transition-all ease-in-out bg-black px-[2rem] py-[.7rem] max-h-[3rem] h-[3rem] text-white rounded-full items-center justify-center' href='/contact'>
                     Contact Us
                 </Link>
                 <span className='w-[3rem] h-[3rem] flex rounded-full items-center justify-center border-2 border-black'>

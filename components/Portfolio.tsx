@@ -12,7 +12,16 @@ const Portfolio: React.FC = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const swiperRef = useRef<any>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
 
+    handleResize(); // Check initial size
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   useEffect(() => {
     const mouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
@@ -63,9 +72,9 @@ const Portfolio: React.FC = () => {
         </motion.div>
         <Swiper
           ref={swiperRef}
-          spaceBetween={25}
+          spaceBetween={ isMobile ? 10: 25}
           loop={true}
-          slidesPerView={1.5}
+          slidesPerView={ isMobile ? 1.1: 1.5}
           className="w-full flex flex-wrap h-auto pt-10 gap-6"
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)} // Keep track of the real index
         >
@@ -98,7 +107,7 @@ const Portfolio: React.FC = () => {
               <div className="flex bg-[#1f1d1c] justify-between">
                 <div className='p-3'>
                   <h3 className={`text-white text-start text-2xl md:text-3xl ${Rancher}`}>{item.projectTitle}</h3>
-                  <h5 className={`text-gray-300 text-start text-sm md:text-2xl pt-2 ${SedaN}`}>{item.projectSubtitle}</h5>
+                  <h5 className={`text-gray-300 text-start text-sm md:text-2xl md:pt-2 ${SedaN}`}>{item.projectSubtitle}</h5>
                 </div>
               </div>
             </SwiperSlide>
