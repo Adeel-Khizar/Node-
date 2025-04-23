@@ -169,7 +169,7 @@ const Footer = () => {
                   <p
                     className={`flex flex-col lg:flex-row gap-4 lg:gap-9 text-[hsla(0,0%,100%,.7)] ${PoppinsFont}`}
                   >
-                    <strong className="text-yellow-400">{loc.region}</strong>
+                    <strong className="text-gray-400">{loc.region}</strong>
                     {loc.address}
                   </p>
                 </div>
@@ -216,7 +216,7 @@ const Footer = () => {
 
         <div className="w-full flex md:flex-row flex-col md:gap-0 gap-4 lg:mt-14 mt-7 items-center justify-center text-center md:justify-between border-t-2 border-gray-800 pt-6">
           <p className={`text-sm text-[hsla(0,0%,100%,.7)] ${PoppinsFont}`}>
-            Copyright © 2024 All Rights Reserved
+            Node Technologies 2020 – 2025. All Rights Reserved
           </p>
           <div className="flex items-center">
             {footerLinks.map((link, index) => (
