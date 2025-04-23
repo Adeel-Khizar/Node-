@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import NodeLogo from "../public/node-footer-logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,6 +13,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FaStar } from "react-icons/fa";
 import { OswaldFont, PoppinsFont, OutfitFont } from "@/fonts";
+
+declare global {
+  interface Window {
+    Trustpilot?: {
+      loadFromElement: (element: HTMLElement | null, async: boolean) => void;
+    };
+  }
+}
 
 const SocialIcon = React.memo(({ href, icon, label, hoverColor }: any) => (
   <a
@@ -71,12 +80,13 @@ const Footer = () => {
   const officeLocations = [
     {
       region: "USA",
-      address: "2451 Sunderland Ln, Lewisville TX 75067",
+      address:
+        "7091 4TH ST STE 300 ST PETERSBERG, Florida, NY 33702, United States",
     },
     {
       region: "ASIA",
       address:
-        "3-I, 2nd Floor, Block 3, Business Bay, Phase 7, Bahria Town, Islamabad, Pakistan",
+        "VIP, Service Road East, Ghori, Town, Islamabad, 44000, Islamabad, 55000",
     },
   ];
 
@@ -84,13 +94,13 @@ const Footer = () => {
     {
       type: "text",
       content:
-        "When you need an IT or software expert without the tedious hiring process",
+        "Skip the hassle. Get immediate access to top-notch software and IT skills!",
       extraClass: "pb-5",
     },
     {
       type: "link",
-      content: "info@diligenttechnologies.co",
-      href: "mailto:info@diligenttechnologies.co",
+      content: "hrjobs@nodeagency.co",
+      href: "mailto:hrjobs@nodeagency.co",
       extraClass: "pb-20",
     },
   ];
@@ -112,8 +122,37 @@ const Footer = () => {
   const sharedLinkClass = `px-2 text-[hsla(0,0%,100%,.7)] ${PoppinsFont}`;
   const borderRightClass = "border-r-2 border-gray-600";
 
+  useEffect(() => {
+    const initTrustpilotWidget = () => {
+      if (window.Trustpilot) {
+        window.Trustpilot.loadFromElement(
+          document.getElementById("trustpilot-widget"),
+          true
+        );
+      }
+    };
+
+    if (window.Trustpilot) {
+      initTrustpilotWidget();
+    } else {
+      window.addEventListener("trustpilot_ready", initTrustpilotWidget);
+    }
+
+    return () => {
+      window.removeEventListener("trustpilot_ready", initTrustpilotWidget);
+    };
+  }, []);
+
   return (
     <div className="px-[5vw] pt-[60px] bg-[#fff] pb-12">
+      <Script
+        src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+        strategy="lazyOnload"
+        onLoad={() => {
+          window.dispatchEvent(new Event("trustpilot_ready"));
+        }}
+      />
+
       <div className="bg-[#131213] rounded-xl p-10">
         <div className="flex lg:flex-row flex-col justify-evenly lg:gap-20 gap-6 w-full pb-5">
           <div className="lg:w-[23%] w-full text-center">
@@ -147,7 +186,7 @@ const Footer = () => {
               )
             )}
 
-            <div className="flex justify-center items-center gap-3 mt-5">
+            <div className="justify-center items-center gap-3 mt-5 hidden">
               {socialLinks.map((link, index) => (
                 <SocialIcon key={index} {...link} />
               ))}
@@ -169,7 +208,7 @@ const Footer = () => {
                   <p
                     className={`flex flex-col lg:flex-row gap-4 lg:gap-9 text-[hsla(0,0%,100%,.7)] ${PoppinsFont}`}
                   >
-                    <strong className="text-gray-400">{loc.region}</strong>
+                    <strong className="text-white">{loc.region}</strong>
                     {loc.address}
                   </p>
                 </div>
@@ -197,18 +236,22 @@ const Footer = () => {
             </ul>
 
             <div className="flex justify-center mt-8">
-              <div className="relative lg:w-[220px] w-[220px] h-auto py-4 px-4 flex flex-col justify-center text-white rounded-lg overflow-hidden bg-[url('/footer-item-bg.svg')] bg-cover bg-center">
-                <div className="text-right z-10">
-                  <span
-                    className={`text-[20.5px] font-bold ${OutfitFont} leading-4`}
-                  >
-                    REVIEW US
-                  </span>
-                  <p className={`text-[11px] ${OutfitFont} leading-4`}>
-                    ON <strong>DESIGNRUSH</strong>
-                  </p>
-                  <Stars />
-                </div>
+              <div
+                id="trustpilot-widget"
+                className="trustpilot-widget"
+                data-locale="en-US"
+                data-template-id="56278e9abfbbba0bdcd568bc"
+                data-businessunit-id="680269cab6723fa6a6d265c7"
+                data-style-height="52px"
+                data-style-width="100%"
+              >
+                <a
+                  href="https://www.trustpilot.com/review/nodeagency.co"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Trustpilot
+                </a>
               </div>
             </div>
           </div>
@@ -216,9 +259,9 @@ const Footer = () => {
 
         <div className="w-full flex md:flex-row flex-col md:gap-0 gap-4 lg:mt-14 mt-7 items-center justify-center text-center md:justify-between border-t-2 border-gray-800 pt-6">
           <p className={`text-sm text-[hsla(0,0%,100%,.7)] ${PoppinsFont}`}>
-            Node Technologies 2020 – 2025. All Rights Reserved
+            Node Agency 2020 - 2025. All Rights Reserved
           </p>
-          <div className="flex items-center">
+          <div className="hidden items-center">
             {footerLinks.map((link, index) => (
               <Link
                 key={index}
