@@ -1,4 +1,10 @@
-import { Oswald, Pontano_Sans, Ramabhadra, Poppins } from "next/font/google";
+import {
+  Oswald,
+  Pontano_Sans,
+  Ramabhadra,
+  Poppins,
+  Outfit,
+} from "next/font/google";
 
 const unbounded = Ramabhadra({
   subsets: ["latin"],
@@ -24,7 +30,14 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-outfit",
+});
+
 export const SedaN = acme.className;
 export const Rancher = unbounded.className;
 export const OswaldFont = oswald.className;
 export const PoppinsFont = poppins.className;
+export const OutfitFont = outfit.className;
