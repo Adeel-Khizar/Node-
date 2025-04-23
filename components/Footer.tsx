@@ -1,4 +1,7 @@
 "use client";
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 import NodeLogo from "../public/node-footer-logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,10 +11,27 @@ import {
   faFacebookF,
 } from "@fortawesome/free-brands-svg-icons";
 import { FaStar } from "react-icons/fa";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
 import { OswaldFont, PoppinsFont, OutfitFont } from "@/fonts";
+
+const SocialIcon = React.memo(({ href, icon, label, hoverColor }: any) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noreferrer"
+    aria-label={label}
+    className={`transition-all duration-300 text-sm md:text-base ${hoverColor}`}
+  >
+    <FontAwesomeIcon icon={icon} />
+  </a>
+));
+
+const Stars = () => (
+  <div className="flex justify-end mt-2 gap-1">
+    {[...Array(5)].map((_, i) => (
+      <FaStar key={i} className="text-yellow-400 text-[10px]" />
+    ))}
+  </div>
+);
 
 const Footer = () => {
   const navLinks = [
@@ -26,21 +46,25 @@ const Footer = () => {
       href: "https://linkedin.com",
       icon: faLinkedin,
       hoverColor: "hover:text-blue-800",
+      label: "LinkedIn",
     },
     {
       href: "https://youtube.com",
       icon: faYoutube,
       hoverColor: "hover:text-red-600",
+      label: "YouTube",
     },
     {
       href: "https://twitter.com",
       icon: faTwitter,
       hoverColor: "hover:text-sky-500",
+      label: "Twitter",
     },
     {
       href: "https://facebook.com",
       icon: faFacebookF,
       hoverColor: "hover:text-blue-700",
+      label: "Facebook",
     },
   ];
 
@@ -56,7 +80,6 @@ const Footer = () => {
     },
   ];
 
-  const sharedTextClass = `lg:text-[17px] text-[hsla(0,0%,100%,.7)] ${PoppinsFont}`;
   const infoItems = [
     {
       type: "text",
@@ -67,13 +90,10 @@ const Footer = () => {
     {
       type: "link",
       content: "info@diligenttechnologies.co",
-      href: "#",
+      href: "mailto:info@diligenttechnologies.co",
       extraClass: "pb-20",
     },
   ];
-
-  const sharedLinkClass = `px-2 text-[hsla(0,0%,100%,.7)] ${PoppinsFont}`;
-  const borderRightClass = "border-r-2 border-gray-600";
 
   const footerLinks = [
     {
@@ -88,11 +108,15 @@ const Footer = () => {
     },
   ];
 
+  const sharedTextClass = `lg:text-[17px] text-[hsla(0,0%,100%,.7)] ${PoppinsFont}`;
+  const sharedLinkClass = `px-2 text-[hsla(0,0%,100%,.7)] ${PoppinsFont}`;
+  const borderRightClass = "border-r-2 border-gray-600";
+
   return (
     <div className="px-[5vw] pt-[60px] bg-[#fff] pb-12">
       <div className="bg-[#131213] rounded-xl p-10">
-        <div className="flex lg:flex-row flex-col justify-evenly lg:gap-20 gap-6 w-full pb-5 ">
-          <div className="lg:w-[23%] w-full  text-center">
+        <div className="flex lg:flex-row flex-col justify-evenly lg:gap-20 gap-6 w-full pb-5">
+          <div className="lg:w-[23%] w-full text-center">
             <div className="flex items-center justify-center lg:pb-8 pb-4">
               <Link href="/">
                 <Image
@@ -103,6 +127,7 @@ const Footer = () => {
                 />
               </Link>
             </div>
+
             {infoItems.map((item, index) =>
               item.type === "text" ? (
                 <p
@@ -124,41 +149,28 @@ const Footer = () => {
 
             <div className="flex justify-center items-center gap-3 mt-5">
               {socialLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon
-                    icon={link.icon}
-                    className={`transition-all duration-300 text-sm md:text-base ${link.hoverColor}`}
-                  />
-                </a>
+                <SocialIcon key={index} {...link} />
               ))}
             </div>
           </div>
 
-          <div className="lg:w-[27%] w-full  p-4 lg:p-0">
+          <div className="lg:w-[27%] w-full p-4 lg:p-0">
             <h4
               className={`text-[20px] lg:text-2xl font-bold mb-6 text-center lg:mb-8 ${OswaldFont}`}
             >
               LOCATIONS
             </h4>
-
             <div className="space-y-4 lg:space-y-6">
-              {officeLocations.map((location, index) => (
+              {officeLocations.map((loc, idx) => (
                 <div
-                  key={index}
+                  key={idx}
                   className="flex lg:flex-row flex-col items-center lg:items-start justify-center lg:justify-start text-center lg:text-left gap-2 sm:gap-4 lg:gap-6"
                 >
                   <p
                     className={`flex flex-col lg:flex-row gap-4 lg:gap-9 text-[hsla(0,0%,100%,.7)] ${PoppinsFont}`}
                   >
-                    <strong className="text-yellow-400">
-                      {location.region}
-                    </strong>
-                    {location.address}
+                    <strong className="text-yellow-400">{loc.region}</strong>
+                    {loc.address}
                   </p>
                 </div>
               ))}
@@ -195,12 +207,7 @@ const Footer = () => {
                   <p className={`text-[11px] ${OutfitFont} leading-4`}>
                     ON <strong>DESIGNRUSH</strong>
                   </p>
-
-                  <div className="flex justify-end mt-2 gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <FaStar key={i} className="text-yellow-400 text-[10px]" />
-                    ))}
-                  </div>
+                  <Stars />
                 </div>
               </div>
             </div>
@@ -211,7 +218,6 @@ const Footer = () => {
           <p className={`text-sm text-[hsla(0,0%,100%,.7)] ${PoppinsFont}`}>
             Copyright © 2024 All Rights Reserved
           </p>
-
           <div className="flex items-center">
             {footerLinks.map((link, index) => (
               <Link
@@ -219,7 +225,7 @@ const Footer = () => {
                 href={link.href}
                 className={`${sharedLinkClass} ${
                   link.withBorder ? borderRightClass : ""
-                }`}
+                } hover:text-white transition-all duration-200`}
               >
                 {link.text}
               </Link>
@@ -231,4 +237,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default React.memo(Footer);
