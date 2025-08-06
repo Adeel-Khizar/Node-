@@ -82,12 +82,7 @@ const Footer = () => {
       region: "USA",
       address:
         "7091 4TH ST STE 300 ST PETERSBERG, Florida, NY 33702, United States",
-    },
-    // {
-    //   region: "ASIA",
-    //   address:
-    //     "VIP, Service Road East, Ghori, Town, Islamabad, 44000, Islamabad, 55000",
-    // },
+    }
   ];
 
   const infoItems = [
